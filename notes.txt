@@ -1,1 +1,25 @@
 formation drupal 8 linkedinlearning avec Jérôme Megel
+
+Dans drupal->theme : ajouter le dossier custom. Puis dans drupal->theme->contrib créer le dossier formation et avec à l'interieur créer le fichier formation.info.yml.
+
+Dans core theme bartik template copier le fichier page.html.twig et le coller dans le dossier formation
+
+Dans site copier le fichier example.settings.local.php et le coller dans sites->defaut et le renommer en settings.local.php
+
+dans settings.php on decommente les ligne 802 à 804 soit on a le code suivant :
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
+Dans settings.local.php, on désactive le cache en décommentant la ligne 69 : 
+$settings['cache']['bins']['render'] = 'cache.backend.null';
+
+
+Selectionner les régions qu'on souhaite garder en écrivant dans le fichier formation.info.yml
+regions:
+  content: "Région de contenu"
+  sidebar: "Barre de droite"
+  primary_menu: "Menu principal"
+  hearder: "En tête"
+  footer: "Pied de page"
+

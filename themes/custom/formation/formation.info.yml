@@ -1,0 +1,13 @@
+name: Formation
+description: Mon thème de formation Drupal
+type: theme 
+core_version_requirement: ^8.9 || ^9
+base theme: classy
+
+regions:
+  content: "Région de contenu"
+  sidebar: "Barre de droite"
+  primary_menu: "Menu principal"
+  header: "En tête"
+  footer: "Pied de page"
+  # secondary_menu: "menu secondaire"
