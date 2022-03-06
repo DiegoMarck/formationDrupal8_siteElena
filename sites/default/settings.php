@@ -807,10 +807,11 @@ $databases['default']['default'] = array (
   'username' => 'root',
   'password' => '',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_KCmfAqqQHJOHLRW6dvWLSwKADtRPecAg9sc8EXLq4WezyZI9mb4zehQJU_aYz0FPaSETh_C6zA/sync';
 $settings['rebuild_access'] = TRUE;
+

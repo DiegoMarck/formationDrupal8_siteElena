@@ -11,3 +11,8 @@ regions:
   header: "En tête"
   footer: "Pied de page"
   # secondary_menu: "menu secondaire"
+
+libraries:
+  - formation/global-css
+  - formation/global-js
+
