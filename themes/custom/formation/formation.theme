@@ -1,7 +1,6 @@
 <?php
 
 function formation_preprocess_node(&$variables){
-    dsm($variables);
-    kint($variables);
+    
     $variables['#attached']['library'][] = 'formation/node-css';
 }
